@@ -1,30 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main- Program prints last value stored in n
+ * main-input
+ *
  * Return: 0
  *
 */
 int main(void)
 {
-	int n;
+	int nn;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	a = n %  10;
 
-	if (a > 5)
+	int m;
+
+	m = n % 10;
+	if (m > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, a);
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
-	if (a == 0)
+	if (m == 0)
 	{
 		printf("Last digit of %d is %d and is zero\n", n, a);
 	}
-	if (a < 6 && a != 0)
+	if (m < 6 && m != 0)
 	{
-		printf("Last digit of %d is %d and is lass than 6\n", n, a);
+		printf("Last digit of %d is %d and is less than 6\n", n, m);
 	}
 	return (0);
 }
