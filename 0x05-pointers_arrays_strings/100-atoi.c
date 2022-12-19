@@ -13,12 +13,12 @@ int _atoi(char *s)
 		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 			break;
 		if (*(s + count) == '-')
-					pn *= -1;
+			pn *= -1;
 		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 		{
-		if (size > 0)
-					m *= 10;
-					size++;
+			if (size > 0)
+			m *= 10;
+			size++;
 		}
 		count++;
 	}
