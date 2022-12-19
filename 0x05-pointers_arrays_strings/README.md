@@ -1,1 +1,1 @@
-pointers,arrays and strings
+Arrays are not printers
