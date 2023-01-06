@@ -20,4 +20,6 @@ int square(int n, int val)
 		return (val);
 	else if (val * val < n)
 		return (square(n, val + 1));
-
+	else
+		return (-1);
+}
