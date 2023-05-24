@@ -1,8 +1,8 @@
-CC := gcc
-SRC := $(*.c)
-OBJ := $(SRC:.c=.o)
-NAME := school
-CFLAGS := -Wall -Werror -Wextra -pedantic
+CC = gcc
+SRC = $(*.c)
+OBJ = $(SRC:.c=.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
 .PHONY: all clean fclean oclean re
 all: $(NAME)
 $(NAME): $(OBJ)
