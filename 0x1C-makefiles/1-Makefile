@@ -1,0 +1,12 @@
+TARGET = school
+CC = gcc
+SRC = main.c file1.c file2.c
+OBJS = $(SRC:.c=.o)
+CFLAGS = -Wall -Wextra
+all: $(TARGET)
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
+.c.o:
+	$(CC) $(CFLAGS) -c $< -o $@
+clean:
+	rm -f $(OBJS) $(TARGET)
