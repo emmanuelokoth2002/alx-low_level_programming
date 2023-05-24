@@ -3,6 +3,7 @@
 Module: 5-island_perimeter
 """
 
+
 def island_perimeter(grid):
     """
     Returns the perimeter of the island described in grid.
@@ -26,8 +27,6 @@ def island_perimeter(grid):
         for col in range(cols):
             if grid[row][col] == 1:
                 perimeter += 4
-
-                # Check adjacent cells
                 if row > 0 and grid[row - 1][col] == 1:
                     perimeter -= 2
                 if col > 0 and grid[row][col - 1] == 1:
