@@ -9,8 +9,7 @@
  * @size: Number of elements in the array
  * @value: Value to search for
  *
- * Return: Index where the value is located, or -1 if not found or array is
- * NULL
+ * Return: Index where the value is located, or -1 if not found or array is NULL
  */
 int interpolation_search(int *array, size_t size, int value)
 {
@@ -21,13 +20,6 @@ int interpolation_search(int *array, size_t size, int value)
 
 	while (low <= high && value >= array[low] && value <= array[high])
 	{
-		if (low == high)
-		{
-			if (array[low] == value)
-				return (low);
-			return (-1);
-		}
-
 		pos = low + (((double)(high - low) / (array[high] - array[low])) *
 				(value - array[low]));
 
