@@ -1,7 +1,7 @@
 #include "search_algos.h"
 #include <stdlib.h>
 /**
- * min - finds the minimum 
+ * min - finds the minimum
  * @a: first number
  * @b: second number
  *
